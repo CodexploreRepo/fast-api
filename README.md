@@ -20,3 +20,5 @@ deactivate
 |---|---|
 |Fast API|`pip install fastapi[all]` <br>**all**: to include installing all dependencies along with FastAPI package
 |List installed packages| `pip freeze` |
+
+- Step 4: Start Fast API server `uvicorn main:app --reload`
