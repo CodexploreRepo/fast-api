@@ -22,3 +22,5 @@ deactivate
 |List installed packages| `pip freeze` |
 
 - Step 4: Start Fast API server `uvicorn main:app --reload`
+- API documentation: http://127.0.0.1:8000/docs or http://127.0.0.1:8000/redoc 
+
