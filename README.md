@@ -24,7 +24,11 @@ deactivate
 - Step 4: Start Fast API server `uvicorn app.main:app --reload`
   - API documentation: http://127.0.0.1:8000/docs or http://127.0.0.1:8000/redoc 
 
-# 2. HTTP Code
+# 2. Tech Stacks
+- `Redis` database is used as a broker 
+- `Celery` is used to create workers that perform the extraction.
+
+# 3. HTTP Code
 ### Successful responses
 - `200` HTTP 200 OK success status response code indicates that the request has succeeded
 - `202` HTTP Status 202 indicates that the request has been accepted for processing, but the processing has not been completed. 
