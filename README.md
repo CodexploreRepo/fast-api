@@ -26,4 +26,5 @@ deactivate
 
 # 2. HTTP Code
 ### Successful responses
+- `200` HTTP 200 OK success status response code indicates that the request has succeeded
 - `202` HTTP Status 202 indicates that the request has been accepted for processing, but the processing has not been completed. 
