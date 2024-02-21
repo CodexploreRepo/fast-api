@@ -1,8 +1,9 @@
+from random import randrange
 from typing import Optional
-from fastapi import FastAPI, Response, status, HTTPException
+
+from fastapi import FastAPI, HTTPException, Response, status
 from fastapi.params import Body
 from pydantic import BaseModel
-from random import randrange
 
 app = FastAPI()
 
@@ -69,7 +70,7 @@ def update_post(id: int, post: Post):
     if index == None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail=f"Post with id: {id} does not exist")
-    post_dict = post.dict()
+    post_dict = post.model_dump()
     post_dict['id'] = id
     my_posts[index] = post_dict
-    return {'data': post_dict}
+    return {'data': post_dict}    return {'data': post_dict}
