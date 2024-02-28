@@ -9,7 +9,7 @@
   - `source .env`: This command sources (executes) the contents of the file `.env` in the current shell environment. This typically contains variable assignments or exports.
   - `set +a`: This option disables automatic exporting of variables.
 
-### Concurrency and `async` / `await`#
+### Concurrency and `async` / `await`
 
 - Modern versions of Python have support for **"asynchronous code"** using something called **"coroutines"**, with `async` and `await` syntax.
 
